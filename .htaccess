@@ -1,0 +1,12 @@
+RewriteEngine On
+RewriteRule "index.html" "index.php"
+RewriteRule "^([a-zA-Z0-9_-]+)/?.html$" "?thamso=$1" [NC,L]
+RewriteRule "^san-pham/([a-zA-Z0-9_-]+)-([0-9]+).html$" "?thamso=chi-tiet&ten=$1-$id=$2" [NC,L]
+RewriteRule "^bai-viet/([a-zA-Z0-9_-]+)-([0-9]+).html$" "?thamso=xuat-bai-viet&ten=$1-&id=$2" [NC,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)=([a-zA-Z0-9_-]+)$" "?thamso=$1&$2=$3" [NC,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/([0-9]+).html$" "?thamso=$1&id=$2" [NC,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/quan-tri/([a-zA-Z0-9_-]+).html$" "?thamso=$1&quan-tri=$2" [NC,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/quan-tri/([a-zA-Z0-9_-]+)&([a-zA-Z0-9_-]+)=([0-9]*)$" "?thamso=$1&quan-tri=$2&$3=$4" [NC,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/quan-tri/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+)=([0-9]*)$" "?thamso=$1&quan-tri=$2&$3&$4=$5" [NC,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/quan-tri/([a-zA-Z0-9_-]+)&([a-zA-Z0-9_-]+)=([a-zA-Z0-9_-]+)&id=([0-9]+)$" "?thamso=$1&quan-tri=$2=$3=$4&id=$5" [NC,L]
+RewriteRule "^([a-zA-Z0-9_-]+)/([a-zA-Z0-9_-]+).html$" "?thamso=$1&dieu_huong=$2" [NC,L]

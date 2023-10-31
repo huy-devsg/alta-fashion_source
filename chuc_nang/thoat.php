@@ -1,0 +1,3 @@
+<?php
+    trang_truoc();
+?>
